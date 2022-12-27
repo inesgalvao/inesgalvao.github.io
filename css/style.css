@@ -39,7 +39,10 @@ nav {
     display: flex;
     justify-content: space-between;
     width: 400px;
+}
 
+nav #ativo{
+    font-family: 'Clash Display SemiBold';
 }
 
 nav a {
@@ -97,7 +100,8 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 10em;
-
 }
+
+
 
 
