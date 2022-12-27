@@ -1,0 +1,45 @@
+.work-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 4%;
+    margin-top: 10%;
+}
+
+.grid-item {
+    margin: 2%;
+    margin-top: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+.grid-item img{
+    width: 100%;
+    height: auto;
+    transition: 0.5s;
+}
+
+.titulo{
+    font-size: 1.2em;
+    font-family: 'Clash Display Medium';
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #182022;
+}
+
+.grid-item a{
+    text-decoration: none;
+}
+
+.grid-item:hover{
+    cursor: pointer;
+}
+
+.grid-item:hover img{
+    border-radius: 8%;
+
+}
+
+.grid-item:hover p{
+    color:#FF8BD7;
+    font-family: 'Clash Display SemiBold';
+}

@@ -1,0 +1,103 @@
+body {
+    background: #f2f2f2;
+    color: #182022;
+    text-align: center;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.text_nav {
+    font-size: 1.3em;
+    font-family: 'Clash Display Medium';
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+#navBar {
+    overflow: hidden;
+    position: fixed;
+    background-color: #f2f2f2;
+    width: 100%;
+    height: auto;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nome {
+    padding: 0 4%;
+}
+
+.nav {
+    padding: 0 4%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #182022;
+}
+
+nav a:hover {
+    color: #0048EA;
+    cursor: pointer;
+}
+
+#about_me {
+    margin: 4%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto {
+    padding-right: 15%;
+}
+
+.title {
+    font-family: 'Clash Display SemiBold';
+    color: #FF8BD7;
+    font-size: 6em;
+    margin-bottom: 5%;
+    letter-spacing: 0.05em;
+}
+
+.corrido {
+    font-family: 'SF Pro';
+    font-size: 1.2em;
+    line-height: 32px;
+}
+
+#percurso img {
+    margin-bottom: 4%;
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    margin-right: 4%;
+    padding-bottom: 4%;
+}
+
+.sociais {
+    display: flex;
+    justify-content: space-between;
+    width: 10em;
+
+}
+
+
