@@ -1,15 +1,17 @@
-#navMain{
+#navMain {
     margin: 10% 4% 5% 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #0048EA;
 }
 
-#intro{
+
+#intro {
     margin: 0 6%;
 }
 
-h1{
+h1 {
     font-family: 'Clash Display SemiBold';
     color: #FF8BD7;
     font-size: 5em;
@@ -17,31 +19,28 @@ h1{
     letter-spacing: 0.05em;
 }
 
-p{
+p {
     font-family: 'SF Pro';
     font-size: 1.2em;
     line-height: 32px;
 }
 
-#project-container{
+#project-container {
     display: grid;
+    grid-gap: 1%;
     grid-template-columns: 1fr 1fr;
-    margin: 4%;
+    margin: 0 4%;
     margin-top: 10%;
 }
 
-.project-item{
-    margin: 1%;
+.project-item {
     margin-top: 0;
-    text-align: center;
-    align-items: center;
-  }
+}
 
-.project-item img{
+.project-item img {
     width: 100%;
     height: auto;
 }
-
 
 a img:last-child {
     display: none;
@@ -53,4 +52,11 @@ a:hover img:last-child {
 
 a:hover img:first-child {
     display: none;
+
+}
+
+#gif {
+    display: block;
+    margin: 0 4%;
+    margin-top: 1%;
 }
