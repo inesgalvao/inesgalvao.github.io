@@ -2,13 +2,14 @@
     margin: 10% 4% 5% 4%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align: center;
     color: #0048EA;
 }
 
 
 #intro {
     margin: 0 6%;
+    margin-bottom: 10%;
 }
 
 h1 {
@@ -30,8 +31,8 @@ p {
     grid-gap: 1%;
     grid-template-columns: 1fr 1fr;
     margin: 0 4%;
-    margin-top: 10%;
 }
+
 
 .project-item {
     margin-top: 0;
@@ -41,6 +42,7 @@ p {
     width: 100%;
     height: auto;
 }
+
 
 a img:last-child {
     display: none;
@@ -52,11 +54,10 @@ a:hover img:last-child {
 
 a:hover img:first-child {
     display: none;
-
 }
 
 #gif {
     display: block;
-    margin: 0 4%;
-    margin-top: 1%;
+    margin: 1% 4%;
 }
+

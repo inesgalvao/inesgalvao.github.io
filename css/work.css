@@ -1,12 +1,12 @@
 .work-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin: 4%;
+    margin: 0 4%;
     margin-top: 10%;
+    gap: 1%;
 }
 
 .grid-item {
-    margin: 2%;
     margin-top: 0;
     text-align: center;
     align-items: center;
