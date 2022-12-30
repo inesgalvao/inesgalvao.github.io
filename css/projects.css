@@ -43,6 +43,9 @@ p {
     height: auto;
 }
 
+a img{
+    max-width: 100%;
+}
 
 a img:last-child {
     display: none;
@@ -57,7 +60,50 @@ a:hover img:first-child {
 }
 
 #gif {
-    display: block;
     margin: 1% 4%;
 }
 
+#gif a img{
+    display: block;
+}
+
+
+/*------------- RESPOSIVIDADE --------------*/
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 3em;
+        letter-spacing: 0.03em;
+    }
+    
+    p {
+        font-size: 1em;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        margin-top: 32%;
+    }
+
+    #navMain {
+        margin: 0 8% 5% 8%;
+    }
+    #project-container {
+        grid-template-columns: 1fr;
+        margin: 0 8%;
+    }
+    h1 {
+        font-size: 2em;
+        letter-spacing: 0.03em;
+    }
+    #intro {
+        margin: 0 8%;
+        margin-bottom: 10%;
+    }
+    #gif {
+        margin: 2% 8%;
+    }
+
+}

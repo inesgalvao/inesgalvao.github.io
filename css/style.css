@@ -1,3 +1,4 @@
+/* ---------- ABOUT ME --------- */
 body {
     background: #f2f2f2;
     color: #182022;
@@ -16,11 +17,10 @@ body {
 }
 
 #navBar {
-    overflow: hidden;
     position: fixed;
     background-color: #f2f2f2;
     width: 100%;
-    height: auto;
+    height: fit-content;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -31,27 +31,27 @@ body {
     padding: 0 4%;
 }
 
-.nav {
+#navBar .nav {
     padding: 0 4%;
 }
 
-nav {
+#navBar nav {
     display: flex;
     justify-content: space-between;
     width: 400px;
 }
 
-nav #ativo{
-    
+#navBar nav #ativo {
+
     font-family: 'Clash Display SemiBold';
 }
 
-nav a {
+#navBar nav a {
     text-decoration: none;
     color: #182022;
 }
 
-nav a:hover {
+#navBar nav a:hover {
     color: #0048EA;
     cursor: pointer;
 }
@@ -61,13 +61,9 @@ nav a:hover {
     margin-top: 10%;
     margin-bottom: 10%;
     text-align: left;
-    display: flex;
+    display: block;
     justify-content: space-between;
     align-items: center;
-}
-
-.texto {
-    padding-right: 15%;
 }
 
 .title {
@@ -84,17 +80,28 @@ nav a:hover {
     line-height: 32px;
 }
 
-#percurso img {
-    margin-bottom: 4%;
-    max-width: 100%;
-    height: auto;
+
+#percurso{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 10% 4%;
+    gap: 1%;
 }
 
+.percurso-item {
+    margin-top: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .percurso-item img{
+    width: 100%;
+  }
+
+/* ---------- FOOTER --------- */
 footer {
-    position: absolute;
-    right: 0;
     margin-top: 4%;
-    margin-right: 4%;
+    margin-left: 4%;
     padding-bottom: 4%;
 }
 
@@ -104,20 +111,244 @@ footer {
     width: 10em;
 }
 
-a img:last-child {
+.sociais_mobile{
+    margin-top: 64%;
+    text-align: center;
+}
+
+footer a img:last-child {
     display: none;
 }
 
-a:hover img:last-child {
+footer a:hover img:last-child {
     display: block;
 }
 
-a:hover img:first-child {
+footer a:hover img:first-child {
     display: none;
 }
 
 
+/* ---------- FORM --------- */
+#contact {
+    margin: 14% 4%;
+    text-align: center;
+}
+
+#contact h1 {
+    margin-bottom: 4%;
+    font-family: 'Clash Display SemiBold';
+    color: #FF8BD7;
+    font-size: 6em;
+    letter-spacing: 0.05em;
+}
+
+#contact p {
+    font-family: 'SF Pro';
+    font-size: 1.2em;
+    margin-bottom: 3%;
+}
+
+.form {
+    width: 60%;
+    margin: 1% 0;
+    height: 10em;
+    background-color: #ffffff;
+    border: 0.5px solid #182022;
+}
+
+.button{
+    width: 60%;
+    height: 3em;
+    margin: 1% 0;
+    background-color: #182022;
+    color: #f2f2f2;
+    font-size: 1em;
+    font-family: 'Clash Display Medium';
+    letter-spacing: 0.03em;
+    border: none;
+    transition: 0.5s;
+}
+
+::placeholder{
+    font-family: 'SF Pro';
+    font-size: 1.2em;
+    line-height: 32px;
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+.button:hover{
+    cursor: pointer;   
+    background-color:#0048EA;
+}
 
 
+#mobile{
+    display: none;
+    max-width: 100%;
+}
 
+#toggle {
+    display: none;
+  }
+  
+  /**
+    Hamburger
+  **/
+  .hamburger {
+    position: fixed;
+    top: 4%;
+    right: 8%;
+    width: 2em;
+    height: fit-content;
+    z-index: 5;
+  }
+  
+  .hamburger div {
+    position: relative;
+    width: 3em;
+    height: 5px;
+    background-color: #0048EA;
+    margin-top: 20%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /**
+  Nav Styles
+  **/
+  #mobile .nav {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #182022;
+    overflow-y: hidden;
+    transition: all 0.3s ease-in-out;
+    transform: scale(0);
+  }
+  #mobile .nav-wrapper {
+    margin-top: 40%;
+  }
+  #mobile nav a {
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 2em;
+    display: inline-block;
+    margin-top: 10%;
+    transition: color 0.2s ease-in-out;
+    letter-spacing: 1px;
+  }
+  #mobile nav a:before {
+    content: '';
+    height: 0;
+    position: absolute;
+    width: 0.25em;
+    transition: all 0.2s ease-in-out;
+  }
+  #mobile nav a:hover:before {
+    height: 100%;
+  }
+  
+  /**
+  Animations
+  **/
+  #toggle:checked + .hamburger .top-bun {
+    transform: rotate(-45deg);
+    margin-top: 25px;
+    background-color: #FF8BD7;
+  }
+  #toggle:checked + .hamburger .bottom-bun {
+    opacity: 0;
+    transform: rotate(45deg);
+  }
+  #toggle:checked + .hamburger .meat {
+    transform: rotate(45deg);
+    margin-top: -7px;
+    background-color: #FF8BD7;
+  }
+  
+  #toggle:checked + .hamburger + .nav {
+    top: 0;
+    transform: scale(1);
+  }
 
+  ul{
+    list-style: none;
+    padding-inline-start: 0;
+    text-align: center;
+  }
+
+/*------------- RESPOSIVIDADE --------------*/
+
+@media screen and (max-width: 900px) {
+    #navBar nav {
+        width: 340px;
+    }
+    .text_nav {
+        font-size: 1.1em;
+    }
+    .title {
+        font-size: 5em;
+        letter-spacing: 0.03em;
+    }
+    #about_me {
+        margin-top: 14%;
+    }
+    #percurso{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #navBar {
+        display: none;
+    }
+    #about_me {
+        margin: 8%;
+        margin-top: 32%;
+    }
+    #percurso{
+        grid-template-columns: 1fr;
+        margin: 8%;
+        margin-bottom: 16%;
+    }
+    .title {
+        font-size: 4em;
+        letter-spacing: 0.03em;
+    }
+    
+    p {
+        font-size: 1em;
+        line-height: 24px;
+        margin-bottom: 16%;
+    }
+    footer{
+        display: none;
+    }
+    #contact {
+        margin: 32% 8%;
+    }
+    .form {
+        width: 100%;
+    }
+    
+    .button{
+        width: 100%;
+    }
+
+    #contact h1 {
+        font-size: 2em;
+        letter-spacing: 0.03em;
+    }
+
+    #contact p{
+        margin-bottom: 10%;
+    }
+    
+    #mobile {
+        display: block;
+        overflow: hidden;
+      }
+
+}
