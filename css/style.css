@@ -56,14 +56,19 @@ body {
     cursor: pointer;
 }
 
+
 #about_me {
     margin: 4%;
     margin-top: 10%;
     margin-bottom: 10%;
     text-align: left;
-    display: block;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.texto{
+    width: 90%;
 }
 
 .title {
@@ -78,6 +83,16 @@ body {
     font-family: 'SF Pro';
     font-size: 1.2em;
     line-height: 32px;
+    padding-right: 15%;
+}
+
+.corrido a{
+    color: #182022;
+}
+
+.foto img{
+    width: 100%;
+    border-radius: 8px;
 }
 
 
@@ -293,6 +308,11 @@ footer a:hover img:first-child {
     }
     #about_me {
         margin-top: 14%;
+        display: block;
+    }
+    .corrido{
+        padding-right: 0;
+        margin-bottom: 10%;
     }
     #percurso{
         grid-template-columns: 1fr 1fr;
